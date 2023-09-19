@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Reistration Form</title>
+</head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
+
+body {
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+	background-color:#f7f7f7;
+    background-image:url("./img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+* {box-sizing: border-box}
+
+/* Add padding to container elements */
+.container {
+    padding: 20px;
+      width:50%;
+      height:100%;
+      margin-left:auto;
+      margin-right:auto;
+    border:1px solid #ccc;
+    border-radius: 1%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .box{
+    border:1px solid #ccc;
+    border-radius: 10px;
+    padding:15px;
+    margin:15px;
+  }
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin:10px;
+  display: inline-block;
+  border: 1px solid #ccc ;
+  background: #f7f7f7;
+  border-radius: 10px;
+  width:98%;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+}
+select {
+  width: 18%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+}
+
+input[type=phone] {
+  width: 70%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, select:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #0eb7f4;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  
+  opacity: 0.9;
+	font-size:16px;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+	border-radius:10px;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+/* Change styles for signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .signupbtn {
+     width: 100%;
+  }
+}
+
+
+.team{
+
+    display: flex;
+}
+
+</style>
+<body>
+    <form>
+       
+        <div class="all" >
+        <div class="container">
+           
+          <h1>Participant Information</h1>
+          <p>Please provide you information for getting registered for the hackathon.</p>
+        
+          <div class="box">
+            <label for="email"><b>Team Name</b></label>
+            <input type="text" name="team" placeholder="" required>
+          </div>
+            
+          <div class="box">
+             
+            <label for="email"><b>Team Leader Name</b></label>
+            <input type="text" placeholder="" name="email" required>
+
+          </div>
+         
+          <div class="box">
+
+            <label for="psw"><b>UID of Team Leader</b></label>
+            <input type="text" placeholder="" name="psw" required>
+        
+          </div>
+
+          <div class="box">
+
+            <label for="psw"><b>Year and department of Team Leader</b></label>
+            <input type="text" placeholder="" name="psw" required>
+        
+          </div>
+
+          <div class="box">
+
+            <label for="psw"><b>Email</b></label>
+            <input type="text" placeholder="" name="psw" required>
+        
+          </div>
+
+          <div class="box">
+
+            <label for="psw"><b>Team Size</b></label>
+            <input type="text" placeholder="" name="psw" required>
+        
+          </div>
+
+          <div class="box">
+            
+            <label for="psw"><b>Team members details</b></label>
+            <div class="team">
+                <input type="text" placeholder="Member 1" name="psw" required>
+                <input type="text" placeholder="UID" name="psw" required>
+                <input type="text" placeholder="Year" name="psw" required>
+                <input type="text" placeholder="Department" name="psw" required>
+            </div>
+
+            <div class="team">
+                <input type="text" placeholder="Member 2" name="psw" required>
+                <input type="text" placeholder="UID" name="psw" required>
+                <input type="text" placeholder="Year" name="psw" required>
+                <input type="text" placeholder="Department" name="psw" required>
+            </div>
+
+            <div class="team">
+                <input type="text" placeholder="Member 3" name="psw" required>
+                <input type="text" placeholder="UID" name="psw" required>
+                <input type="text" placeholder="Year" name="psw" required>
+                <input type="text" placeholder="Department" name="psw" required>
+            </div>
+
+            <div class="team">
+                <input type="text" placeholder="Member 4" name="psw" required>
+                <input type="text" placeholder="UID" name="psw" required>
+                <input type="text" placeholder="Year" name="psw" required>
+                <input type="text" placeholder="Department" name="psw" required>
+            </div>
+            
+           
+        
+          </div>
+       
+          <div class="box">
+
+            <label for="psw"><b>Problem Statement</b></label>
+            <input type="text" placeholder="" name="psw" required>
+        
+          </div>
+
+          <div class="box">
+
+            <label for="psw"><b>Problem Statement ID</b></label>
+            <input type="text" placeholder="" name="psw" required>
+        
+          </div>
+         
+          
+          <div class="clearfix">
+      
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </div>
+    </div>
+      </form>
+
+  
+</body>
+</html>
